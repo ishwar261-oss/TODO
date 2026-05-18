@@ -74,12 +74,4 @@ python todo.py
 - Indexing
 - Logic Building
 
----
 
-## Future Improvements
-- File Saving
-- Login System
-- GUI Version
-- Deadline System
-- Notifications
-- Database Support
