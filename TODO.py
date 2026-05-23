@@ -1,6 +1,4 @@
-# ==========================================
-# ADVANCED TODO LIST USING LIST + NESTED LIST
-# ==========================================
+
 
 tasks = []
 
@@ -17,10 +15,6 @@ while True:
 
     choice = input("Enter Choice : ")
 
-
-    # ==========================================
-    # ADD TASK
-    # ==========================================
     if choice == "1":
 
         task_name = input("Enter Task Name : ")
@@ -33,9 +27,6 @@ while True:
         print("Task Added Successfully")
 
 
-    # ==========================================
-    # VIEW TASKS
-    # ==========================================
     elif choice == "2":
 
         if len(tasks) == 0:
@@ -55,9 +46,6 @@ while True:
                 )
 
 
-    # ==========================================
-    # MARK COMPLETED
-    # ==========================================
     elif choice == "3":
 
         if len(tasks) == 0:
@@ -80,9 +68,6 @@ while True:
                 print("Invalid Task Number")
 
 
-    # ==========================================
-    # REMOVE TASK
-    # ==========================================
     elif choice == "4":
 
         if len(tasks) == 0:
@@ -105,9 +90,6 @@ while True:
                 print("Invalid Task Number")
 
 
-    # ==========================================
-    # SEARCH TASK
-    # ==========================================
     elif choice == "5":
 
         search = input("Enter Task To Search : ").lower()
@@ -128,12 +110,7 @@ while True:
 
         if found == False:
             print("Task Not Found")
-
-
-    # ==========================================
-    # TOTAL TASKS
-    # ==========================================
-    elif choice == "6":
+   elif choice == "6":
 
         total = len(tasks)
 
@@ -153,17 +130,11 @@ while True:
         print(f"Pending Tasks    : {pending}")
 
 
-    # ==========================================
-    # EXIT
-    # ==========================================
+    
     elif choice == "7":
 
         print("Program Closed")
         break
 
-
-    # ==========================================
-    # INVALID
-    # ==========================================
     else:
         print("Invalid Choice")
